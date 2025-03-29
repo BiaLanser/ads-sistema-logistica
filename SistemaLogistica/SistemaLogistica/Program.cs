@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using SistemaLogistica.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +10,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<DefaultContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 var app = builder.Build();
+
+//builder.Services.AddScoped<IProductRepository, ProductRepository>();
+//Services
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
