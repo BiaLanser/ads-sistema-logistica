@@ -4,7 +4,8 @@
     {
         public int Id { get; set; }
         public int VeiculoId { get; set; }
-        public double Litros { get; set; }
+        public decimal LitrosAbastecidos { get; set; }
+        public decimal ValorAbastecido { get; set; }
         public DateTime Data { get; set; }
     }
 }

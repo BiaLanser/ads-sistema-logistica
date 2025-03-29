@@ -1,0 +1,111 @@
+[
+  {
+    "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
+    "Method": "GetAll",
+    "RelativePath": "api/Veiculo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SistemaLogistica.Entities.Veiculo, SistemaLogistica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
+    "Method": "Add",
+    "RelativePath": "api/Veiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "veiculo",
+        "Type": "SistemaLogistica.Entities.Veiculo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaLogistica.Entities.Veiculo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
+    "Method": "GetById",
+    "RelativePath": "api/Veiculo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaLogistica.Entities.Veiculo",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
+    "Method": "Update",
+    "RelativePath": "api/Veiculo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "veiculo",
+        "Type": "SistemaLogistica.Entities.Veiculo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
+    "Method": "Delete",
+    "RelativePath": "api/Veiculo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

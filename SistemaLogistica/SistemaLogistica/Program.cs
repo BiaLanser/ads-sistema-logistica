@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaLogistica.Data;
+using SistemaLogistica.Interfaces;
+using SistemaLogistica.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,10 +15,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DefaultContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-var app = builder.Build();
 
-//builder.Services.AddScoped<IProductRepository, ProductRepository>();
-//Services
+builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
+
+
+
+
+var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
