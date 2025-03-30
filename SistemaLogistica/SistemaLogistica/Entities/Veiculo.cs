@@ -11,7 +11,6 @@ namespace SistemaLogistica.Entities
         public string Marca { get; set; }
         public DateTime AnoFabricacao { get; set; }
         public VeiculoStatus Status { get; set; } // Disponível, Em Movimento, Em Manutenção
-        //enum
     }
 }
 

@@ -17,8 +17,7 @@ builder.Services.AddDbContext<DefaultContext>(options =>
 
 
 builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
-
-
+builder.Services.AddScoped<IMotoristaRepository, MotoristaRepository>();
 
 
 var app = builder.Build();
