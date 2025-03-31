@@ -9,5 +9,7 @@
         public  decimal Velocidade {  get; set; }
         public DateTime DataHora { get; set; }
 
+        //adicionar rota?
+
     }
 }
