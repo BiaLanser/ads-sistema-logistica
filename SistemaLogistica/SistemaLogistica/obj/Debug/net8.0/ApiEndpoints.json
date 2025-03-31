@@ -327,6 +327,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SistemaLogistica.Controllers.RotaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Rota",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SistemaLogistica.Entities.Rota, SistemaLogistica, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.RotaController",
+    "Method": "Add",
+    "RelativePath": "api/Rota",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rota",
+        "Type": "SistemaLogistica.Entities.Rota",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaLogistica.Entities.Rota",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.RotaController",
+    "Method": "GetById",
+    "RelativePath": "api/Rota/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SistemaLogistica.Entities.Rota",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.RotaController",
+    "Method": "Update",
+    "RelativePath": "api/Rota/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "rota",
+        "Type": "SistemaLogistica.Entities.Rota",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SistemaLogistica.Controllers.RotaController",
+    "Method": "Delete",
+    "RelativePath": "api/Rota/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SistemaLogistica.Controllers.VeiculoController",
     "Method": "GetAll",
     "RelativePath": "api/Veiculo",
