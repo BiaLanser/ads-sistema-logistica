@@ -17,5 +17,3 @@ O projeto tem como objetivo fornecer uma solução escalável e segura para empr
 - Git
 - SQL Server
 
-## ✍️ Autora
-Bianca Lanser Peres
